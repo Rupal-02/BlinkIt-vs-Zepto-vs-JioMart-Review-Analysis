@@ -55,20 +55,24 @@ The project follows a standard machine learning workflow:
 * The model architecture includes an embedding layer, LSTM layers, and dense layers.
 
 ### LSTM (Long Short-Term Memory) Model: A Concise Explanation
-LSTMs are a type of recurrent neural network (RNN) designed to overcome the limitations of traditional RNNs in learning long-term dependencies in sequential data.
-Key Feature: Memory Cells
-The core of an LSTM is the memory cell, which stores information over time. It has three gates:
-Forget Gate: Decides what information to discard from the cell.
-Input Gate: Decides what new information to store in the cell.
-Output Gate: Decides what part of the cell's state to output.
-How LSTMs Work:
+*LSTMs are a type of recurrent neural network (RNN) designed to overcome the limitations of traditional RNNs in learning long-term dependencies in sequential data.
+*Key Feature: Memory Cells
+
+*The core of an LSTM is the memory cell, which stores information over time. It has three gates:
+
+*Forget Gate: Decides what information to discard from the cell.
+*Input Gate: Decides what new information to store in the cell.
+*Output Gate: Decides what part of the cell's state to output.
+
+*How LSTMs Work:
 The input sequence is processed step-by-step.
 At each step, the LSTM cell uses its gates to update its state based on the current input and previous state.
 This process continues until the entire sequence is processed.
 The final output can be used for tasks like sentiment analysis.
-Why LSTMs are Good for Sentiment Analysis:
+
+*Why LSTMs are Good for Sentiment Analysis:
 Sentiment analysis needs to consider relationships between words across a whole text. LSTMs excel at capturing these long-term dependencies, making them well-suited for this task.
-In Essence:
+*In Essence:
 Think of LSTMs as having a memory that selectively stores and forgets information, helping them understand the overall sentiment of a text, like a review.
 
 ### Training and Evaluation
