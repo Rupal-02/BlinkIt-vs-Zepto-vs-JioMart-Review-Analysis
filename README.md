@@ -55,25 +55,27 @@ The project follows a standard machine learning workflow:
 * The model architecture includes an embedding layer, LSTM layers, and dense layers.
 
 ### LSTM (Long Short-Term Memory) Model: A Concise Explanation
-*LSTMs are a type of recurrent neural network (RNN) designed to overcome the limitations of traditional RNNs in learning long-term dependencies in sequential data.
-*Key Feature: Memory Cells
-
-*The core of an LSTM is the memory cell, which stores information over time. It has three gates:
-
-*Forget Gate: Decides what information to discard from the cell.
-*Input Gate: Decides what new information to store in the cell.
-*Output Gate: Decides what part of the cell's state to output.
-
-*How LSTMs Work:
-The input sequence is processed step-by-step.
-At each step, the LSTM cell uses its gates to update its state based on the current input and previous state.
-This process continues until the entire sequence is processed.
-The final output can be used for tasks like sentiment analysis.
-
-*Why LSTMs are Good for Sentiment Analysis:
-Sentiment analysis needs to consider relationships between words across a whole text. LSTMs excel at capturing these long-term dependencies, making them well-suited for this task.
-*In Essence:
-Think of LSTMs as having a memory that selectively stores and forgets information, helping them understand the overall sentiment of a text, like a review.
+* What they are:
+A special type of recurrent neural network (RNN).
+Designed to learn long-term dependencies in sequences (which regular RNNs struggle with).
+* Key Feature: Memory Cells
+Store information over time, like a computer's memory.
+Controlled by three "gates":
+Forget Gate: Decides what info to remove from memory.
+Input Gate: Decides what new info to store in memory.
+Output Gate: Decides what info to output based on memory.
+* How they Work:
+Process input sequences step-by-step.
+At each step:
+Cell updates its memory using the gates and current input.
+Continues until the whole sequence is read.
+Final output used for tasks like sentiment analysis.
+* Why Good for Sentiment Analysis:
+Sentiment depends on relationships between words across a text.
+LSTMs are good at capturing these long-range connections.
+In Essence:
+LSTMs have a memory that selectively keeps and discards info.
+This helps them "understand" the overall sentiment of text.
 
 ### Training and Evaluation
 
